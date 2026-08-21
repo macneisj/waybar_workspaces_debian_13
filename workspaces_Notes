@@ -12,14 +12,14 @@
 
 "custom/ws-left": {
   "format": "<small>◀</small>",
-"on-click": "bash -lc 'ws=$(tr -d \"\\r\\n\" < /tmp/labwc_workspaces 2>/dev/null || true); n=$(echo \"$ws\" | awk \"{print \\$2}\"); [ -z \"$n\" ] && n=3; nw=$(( (n+2)%4 + 1 )); wtype -M win -M Ctrl -P Left -s 500 -m win -m Ctrl -p Left >/dev/null 2>&1 || true; sleep 0.25; ~/.local/bin/labwc_ws_set \"$nw\"'",
+"on-click": "bash -lc 'ws=$(tr -d \"\\r\\n\" < /tmp/labwc_workspaces 2>/dev/null || true); n=$(echo \"$ws\" | awk \"{print \\$2}\"); [ -z \"$n\" ] && n=3; nw=$(( (n+2)%4 + 1 )); wtype -M win -M Ctrl -P Left -s 500 -m win -m Ctrl -p Left >/dev/null 2>&1 || true'",
   "tooltip": false,
   "interval": 0
 },
 
 "custom/ws-right": {
   "format": "<small>▶</small>",
-"on-click": "bash -lc 'ws=$(tr -d \"\\r\\n\" < /tmp/labwc_workspaces 2>/dev/null || true); n=$(echo \"$ws\" | awk \"{print \\$2}\"); [ -z \"$n\" ] && n=3; nw=$(( (n)%4 + 1 )); wtype -M win -M Ctrl -P Right -s 500 -m win -m Ctrl -p Right >/dev/null 2>&1 || true; sleep 0.25; ~/.local/bin/labwc_ws_set \"$nw\"'",
+"on-click": "bash -lc 'ws=$(tr -d \"\\r\\n\" < /tmp/labwc_workspaces 2>/dev/null || true); n=$(echo \"$ws\" | awk \"{print \\$2}\"); [ -z \"$n\" ] && n=3; nw=$(( (n)%4 + 1 )); wtype -M win -M Ctrl -P Right -s 500 -m win -m Ctrl -p Right >/dev/null 2>&1 || true'",
   "tooltip": false,
   "interval": 0
 },
