@@ -42,4 +42,4 @@ done
 
 # autostart
 
-sh ~/.local/bin/Hide_Cursor.sh
+sh -c ~/.local/bin/Hide_Cursor.sh
